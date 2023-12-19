@@ -1,0 +1,72 @@
+@import url(variable.css);
+
+/* grid რატო არ მუშაობსს დამტანჯა:(((((( 4 საათია ვზივარ და ვერ ვპოულობ შეცდომას  */
+
+
+.grid_container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    background-color: var(--maincolor);
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 48px 340px 284px;
+    grid-template-areas:
+        "HEADER HEADER HEADER HEADER"
+        "ARTICLE MAINCARD MAINCARD IMAGES"
+        "CARD1 CARD2 CARD3 CARD4"
+    ;
+}
+
+
+header {
+    background-color: aqua;
+    grid-area: HEADER;
+}
+
+article {
+    background-color: blueviolet;
+    grid-area: ARTICLE;
+}
+
+.Maincard {
+    background-color: chartreuse;
+    grid-area: MAINCARD;
+}
+
+.images {
+    background-color: red;
+    grid-area: IMAGES;
+}
+
+.image1 {
+    background-color: blue;
+    /* grid-area: IMAGE1; */
+}
+
+.image2 {
+    background-color: rgb(92, 3, 3);
+    /* grid-area:IMAGE2; */
+}
+
+.card_1 {
+    background-color: forestgreen;
+    grid-area: CARD1;
+}
+
+.card_2 {
+    background-color: hotpink;
+    grid-area: CARD2;
+}
+
+.card_3 {
+    background-color: rgb(139, 108, 9);
+    grid-area: CARD3;
+}
+
+.card_4 {
+    background-color: orangered;
+    grid-area: CARD4;
+}
+
